@@ -1,0 +1,47 @@
+# Generated from docker/src/main/compose/docker-compose.hosting.yml by Maven.
+# Coolify: route the app domain to service "app" on port 8080.
+services:
+  db:
+    image: postgres:18
+    environment:
+      POSTGRES_DB: webttd
+      POSTGRES_USER: webttd
+      POSTGRES_PASSWORD: ${WEBTTD_DB_PASSWORD:?}
+    volumes:
+      - webttd-pg-volume:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U webttd -d webttd"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+  app:
+    image: ondrejzizka/webttd:latest
+    pull_policy: always
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      WEBTTD_DB_URL: jdbc:postgresql://db:5432/webttd
+      WEBTTD_DB_USER: webttd
+      WEBTTD_DB_PASSWORD: ${WEBTTD_DB_PASSWORD:?}
+      WEBTTD_PUBLIC_URL: https://webttd.zizka.ch
+      WEBTTD_AUTH_COOKIE_SECURE: "true"
+      WEBTTD_LEGACY_COMPANY_TOKEN_ENABLED: "false"
+      WEBTTD_AUTH_DEV_SEED_ENABLED: "false"
+      WEBTTD_GOOGLE_CLIENT_ID: disabled-google-client
+      WEBTTD_SMTP_HOST: smtp.resend.com
+      WEBTTD_SMTP_PORT: "465"
+      WEBTTD_SMTP_USERNAME: resend
+      WEBTTD_SMTP_PASSWORD: ${SMTP_PASSWORD:?}
+      QUARKUS_MAILER_TLS: "true"
+      QUARKUS_MAILER_START_TLS: DISABLED
+      WEBTTD_MAIL_FROM: noreply@zizka.ch
+    expose:
+      - "8080"
+    restart: unless-stopped
+
+volumes:
+  webttd-pg-volume:
+    name: webttd-pg-volume

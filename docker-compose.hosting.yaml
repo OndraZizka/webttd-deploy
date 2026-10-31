@@ -1,4 +1,4 @@
-# Generated from docker/src/main/compose/docker-compose.hosting.yml by Maven.
+# Generated from docker/src/main/compose/docker-compose.hosting.yaml by Maven.
 # Coolify: route the app domain to service "app" on port 8080.
 services:
   db:

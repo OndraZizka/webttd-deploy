@@ -26,7 +26,7 @@ services:
       WEBTTD_DB_URL: jdbc:postgresql://db:5432/webttd
       WEBTTD_DB_USER: webttd
       WEBTTD_DB_PASSWORD: ${WEBTTD_DB_PASSWORD:?}
-      WEBTTD_PUBLIC_URL: https://webttd.zizka.ch/
+      WEBTTD_PUBLIC_URL: https://webttd.zizka.ch
       WEBTTD_AUTH_COOKIE_SECURE: "true"
       WEBTTD_LEGACY_COMPANY_TOKEN_ENABLED: "false"
       WEBTTD_AUTH_DEV_SEED_ENABLED: "false"
@@ -35,7 +35,6 @@ services:
       WEBTTD_SMTP_PORT: "465"
       WEBTTD_SMTP_USERNAME: resend
       WEBTTD_SMTP_PASSWORD: ${SMTP_PASSWORD:?}
-      # Keep Stripe credentials as runtime secrets; this compose file is generated and published to Git.
       WEBTTD_STRIPE_SECRET_KEY: ${WEBTTD_STRIPE_SECRET_KEY:-disabled}
       WEBTTD_STRIPE_WEBHOOK_SECRET: ${WEBTTD_STRIPE_WEBHOOK_SECRET:-disabled}
       WEBTTD_STORE_CURRENCY: ${WEBTTD_STORE_CURRENCY:-EUR}

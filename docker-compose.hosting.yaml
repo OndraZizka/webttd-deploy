@@ -35,7 +35,8 @@ services:
       WEBTTD_PUBLIC_URL: https://webttd.zizka.ch/
       WEBTTD_AUTH_COOKIE_SECURE: "true"
       WEBTTD_LEGACY_COMPANY_TOKEN_ENABLED: "false"
-      WEBTTD_AUTH_DEV_SEED_ENABLED: "false"
+      # Enables AI test logins; these known username=password credentials are reset on every app startup.
+      WEBTTD_AUTH_DEV_SEED_ENABLED: "true"
       WEBTTD_GOOGLE_CLIENT_ID: 903638994088-gfcpjp2v7t99l32omk0dcb6kg5q93v58.apps.googleusercontent.com
       WEBTTD_SMTP_HOST: smtp.resend.com
       WEBTTD_SMTP_PORT: "465"

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <meta name="theme-color" content="#536f3f">
+    <title>{{ page.title | default: site.title | escape }} · WebTTD Player Guide</title>
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/site.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to guide content</a>
+    <header class="topbar">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="WebTTD Player Guide home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span><strong>WebTTD</strong><small>PLAYER GUIDE</small></span>
+      </a>
+      <a class="play-link" href="https://webttd.zizka.ch">Play WebTTD <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <div class="page-grid">
+      <aside class="guide-frame window-frame" aria-label="Guide navigation">
+        <div class="window-title"><span>Contents</span><span class="window-controls" aria-hidden="true">_ □ ×</span></div>
+        <nav class="guide-nav">
+          <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}aria-current="page"{% endif %}><span class="nav-icon" aria-hidden="true">⌂</span> Overview</a>
+          <a href="{{ '/building-roads/' | relative_url }}" {% if page.url == '/building-roads/' %}aria-current="page"{% endif %}><span class="nav-icon" aria-hidden="true">▰</span> Roads &amp; buses</a>
+          <a href="{{ '/building-rail/' | relative_url }}" {% if page.url == '/building-rail/' %}aria-current="page"{% endif %}><span class="nav-icon" aria-hidden="true">▤</span> Railways</a>
+          <a href="{{ '/economy/' | relative_url }}" {% if page.url == '/economy/' %}aria-current="page"{% endif %}><span class="nav-icon" aria-hidden="true">€</span> Money &amp; routes</a>
+          <a href="{{ '/playing-together/' | relative_url }}" {% if page.url == '/playing-together/' %}aria-current="page"{% endif %}><span class="nav-icon" aria-hidden="true">♟</span> Companies &amp; chat</a>
+          <a href="{{ '/webttd-vs-openttd/' | relative_url }}" {% if page.url == '/webttd-vs-openttd/' %}aria-current="page"{% endif %}><span class="nav-icon" aria-hidden="true">?</span> WebTTD &amp; OpenTTD</a>
+        </nav>
+        <div class="nav-note"><strong>New to WebTTD?</strong><br>Start with one short route, then grow it when the finances allow.</div>
+      </aside>
+
+      <main id="main" class="content-frame window-frame">
+        <div class="window-title page-titlebar"><span>{{ page.kicker | default: 'Player guide' | escape }}</span><span class="window-controls" aria-hidden="true">_ □ ×</span></div>
+        <article class="page-content">
+          <header class="page-intro">
+            <p class="eyebrow">WEBTTD FIELD GUIDE <span aria-hidden="true">◆</span></p>
+            <h1>{{ page.title | escape }}</h1>
+            {% if page.lead %}<p class="lead">{{ page.lead | escape }}</p>{% endif %}
+          </header>
+          {{ content }}
+        </article>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <span>WebTTD is in active development; rules and world data may change.</span>
+      <a href="{{ '/' | relative_url }}">Back to guide top</a>
+    </footer>
+  </body>
+</html>

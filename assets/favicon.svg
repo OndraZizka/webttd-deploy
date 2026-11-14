@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">WebTTD transport tile</title>
+  <path fill="#567543" d="M0 0h64v64H0z"/>
+  <path fill="#76945e" d="m32 4 28 15-28 15L4 19z"/>
+  <path fill="#627f4e" d="m4 19 28 15v27L4 46z"/>
+  <path fill="#506b40" d="m60 19-28 15v27l28-15z"/>
+  <path fill="none" stroke="#e3d8a2" stroke-width="4" stroke-dasharray="5 4" d="m9 20 23 12 23-12"/>
+  <path fill="#d83d2f" stroke="#292b27" stroke-width="2" d="M25 17h15l5 8v7H20v-7z"/>
+  <path fill="#f7f1cf" d="M28 20h5v5h-5zm8 0h3l3 5h-6z"/>
+  <circle cx="26" cy="33" r="3" fill="#292b27"/><circle cx="40" cy="33" r="3" fill="#292b27"/>
+</svg>

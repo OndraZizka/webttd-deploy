@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Link two towns with a bus
+title: Roads & buses
 description: A step-by-step first road service: roads, bus stops, depot, route, and bus.
 permalink: /building-roads/
 kicker: First transport project
@@ -12,11 +12,6 @@ lead: Connect two towns, collect passengers at both ends, and send a bus back an
 Create a road connection between two towns and run a bus between a stop in each town. If roads already connect the towns,
 you may only need to add the stops and service. If not, build a short, connected link and check the estimated cost before
 confirming construction.
-
-<figure class="map-figure">
-  <img src="{{ '/assets/bus-route.svg' | relative_url }}" alt="Two towns connected by a road, with a passenger stop at each end and a bus on the route">
-  <figcaption>Place each stop close enough to serve the town, and connect both stops to the same road network.</figcaption>
-</figure>
 
 ## Step by step
 
@@ -33,7 +28,7 @@ confirming construction.
 5. **Buy a bus.** Open the depot and choose **New Vehicles**. Pick an available passenger bus that you can afford and buy
    it. The vehicle's details show its purchase price, capacity, and running cost.
 6. **Create the route.** Open **Road vehicles** on the toolbar, then **List of road routes**, and choose **New route**.
-   Add the two bus stops in the order you want the bus to visit them, then choose **Create route**.
+   Add the two bus stops in the order you want the bus to visit them, then choose **Create route**. See [Routes]({{ '/routes/' | relative_url }}) for how one shared plan can serve a fleet.
 7. **Assign and start the bus.** Open the bus, choose **Assign a route**, select the route you created, and choose
    **Assign this route**. Start the bus from its vehicle window.
 

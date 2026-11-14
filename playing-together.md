@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Companies, friends, and chat
+title: Players & companies
 description: Join or create a company, share its transport network, and communicate with players.
 permalink: /playing-together/
 kicker: The world is shared

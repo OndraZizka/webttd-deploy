@@ -14,20 +14,16 @@ available.
 Your first goal is simple: find a need, connect it with a road or railway, and run a vehicle that can serve it. Towns
 create passengers; industries produce goods. Deliveries bring in revenue that you can put toward your next useful link.
 
-<figure class="map-figure">
-  <img src="{{ '/assets/bus-route.svg' | relative_url }}" alt="A bus route linking two towns with a road and a stop in each town">
-  <figcaption>One small, reliable connection is a good start.</figcaption>
-</figure>
-
 ## Pick a first project
 
 | Your idea | Start here |
 |---|---|
-| Carry passengers between nearby towns | [Build a road and bus route]({{ '/building-roads/' | relative_url }}) |
-| Move a product between industries | [Build a railway]({{ '/building-rail/' | relative_url }}) |
-| Plan a budget and understand income | [Money and making a route pay]({{ '/economy/' | relative_url }}) |
-| Play with friends or join a company | [Companies and chat]({{ '/playing-together/' | relative_url }}) |
-| Learn how this MMO differs from OpenTTD | [WebTTD and OpenTTD]({{ '/webttd-vs-openttd/' | relative_url }}) |
+| Carry passengers between nearby towns | [Roads & buses]({{ '/building-roads/' | relative_url }}) |
+| Move a product between industries | [Railways]({{ '/building-rail/' | relative_url }}) |
+| Plan a budget and understand income | [Money & finance]({{ '/economy/' | relative_url }}) |
+| Manage a shared service for several vehicles | [Routes]({{ '/routes/' | relative_url }}) |
+| Play with friends or join a company | [Players & companies]({{ '/playing-together/' | relative_url }}) |
+| Learn how this MMO differs from OpenTTD | [WebTTD vs. OpenTTD]({{ '/webttd-vs-openttd/' | relative_url }}) |
 
 ## Your first few minutes
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: WebTTD and OpenTTD
+title: WebTTD vs. OpenTTD
 description: How WebTTD builds on OpenTTD ideas for a slower, shared multiplayer world.
 permalink: /webttd-vs-openttd/
 kicker: Familiar transport, a different pace
@@ -26,6 +26,17 @@ Compared with OpenTTD, the current MMO design uses:
 These choices are meant to support a world that players can share and revisit casually but regularly. They also mean that
 a successful OpenTTD strategy may need a different budget or timetable here. Check live prices and service results in the
 game rather than assuming the two economies are identical.
+
+## Routes are the service plan
+
+WebTTD treats a route as a first-class part of managing a transport company. Define the ordered stops for a road, rail,
+water, or air service once, then assign compatible vehicles to that shared plan. As demand grows, add vehicles to increase
+capacity instead of maintaining a separate stop list for every bus or train. You manage the service; the vehicles do the
+repeated work.
+
+When you edit a shared route, assigned vehicles follow the revised stop sequence without being teleported or having an
+active trip interrupted. Running vehicles adopt the changes at an appropriate stop. For a practical walkthrough, see
+[Routes]({{ '/routes/' | relative_url }}).
 
 ## Build alongside other players
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Money, loans, and making a route pay
+title: Money & finance
 description: Understand company cash, borrowing, construction costs, cargo demand, and vehicle running costs.
 permalink: /economy/
 kicker: Make each investment count

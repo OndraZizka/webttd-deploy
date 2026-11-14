@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Build a railway for passengers or freight
+title: Railways
 description: Connect rail stations with track, a depot, a train, and an ordered route.
 permalink: /building-rail/
 kicker: Build beyond the road
@@ -10,11 +10,6 @@ lead: Rail can move larger loads over longer distances, especially between indus
 Railways are useful when a road vehicle would carry too little, or when an industry and its customers are far apart. A
 classic freight plan is a coal mine connected to a power station. Passenger trains can also link towns when you build
 passenger-capable stations and use a suitable train.
-
-<figure class="map-figure">
-  <img src="{{ '/assets/rail-route.svg' | relative_url }}" alt="A railway linking a coal mine and a power station through a rail station at each end">
-  <figcaption>Choose a cargo source and a destination that can accept that cargo before laying track.</figcaption>
-</figure>
 
 ## Plan the connection
 
@@ -34,7 +29,7 @@ passenger-capable stations and use a suitable train.
    buying.
 7. **Make and assign a route.** Open **Trains** → **List of rail routes** → **New route**. Add the rail stations in the
    order the train should visit them and save. Open the train, choose **Assign a route**, select the new route, and choose
-   **Assign this route**. Start the train from its vehicle window.
+   **Assign this route**. Start the train from its vehicle window. See [Routes]({{ '/routes/' | relative_url }}) to learn how a shared plan can serve a fleet.
 
 ## How rail differs from roads
 
